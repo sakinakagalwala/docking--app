@@ -48,5 +48,12 @@ END
         st.download_button(
             label="Download Docked Ligand File",
             data=dummy_output,
-            file_n_
+            file_name="docked_ligand.pdbqt",
+            mime="chemical/x-pdbqt"
+        )
+else:
+    st.info("Upload both receptor and ligand files to enable docking.")
+
+st.markdown("---")
+st.caption("© 2025 Molecular Docking Simulation App")
 
